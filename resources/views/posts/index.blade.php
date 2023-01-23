@@ -8,7 +8,6 @@
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         
-        </style>
     </head>
     <body class="antialeased">
         <h1>Blog Name</h1>
@@ -16,7 +15,7 @@
         <div class ='posts'>
             @foreach($posts as $post)
                 <div class ='post'>
-                    <a href="/posts/{{ $post->id}}"><h2 class='title'>{{ $post->title }}</h2></a>
+                    <a href="/posts/{{ $post->id }}"><h2 class='title'>{{ $post->title }}</h2></a>
                     <p class ='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
